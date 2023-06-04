@@ -2,8 +2,16 @@
     "version": 2,
     "routes": [
       {
+        "src": "/api/question",
+        "dest": "/backend/routes/Question.js"
+      },
+      {
+        "src": "/api/answer",
+        "dest": "/backend/routes/Answer.js"
+      },
+      {
         "src": "/(.*)",
-        "dest": "/server.js"
+        "dest": "/frontend/my-app/build/index.html"
       }
     ]
   }
